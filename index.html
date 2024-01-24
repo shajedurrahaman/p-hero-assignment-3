@@ -21,6 +21,8 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- loniicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind custom -->
     <script>
@@ -42,9 +44,9 @@
   </head>
   <body class="font-family">
     <!-- header section start -->
-    <header class="lg:pt-12 lg:px-32">
+    <header class="lg:pt-12 lg:px-20">
       <!-- nav start -->
-      <nav class="px-5 py-2">
+      <nav class="">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -100,35 +102,68 @@
         </div>
       </nav>
       <!-- nav ends -->
-      <div class="carousel mt-14">
+      <div class="carousel mt-14 relative">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="Images/1.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-[#131318] text-[#FFF] border-[#131318]"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-circle bg-[#131318] text-[#FFF] border-[#131318]"
+              >❯</a
+            >
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img
-            src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-            class="w-full"
-          />
+          <img src="Images/1.png" class="w-full" />
+          <div
+            class="bg-[#131318] text-[#FFF] absolute bottom-0 right-0 w-[502px] p-8 rounded-lg mr-14 mb-8"
+          >
+            <h2 class="text-[24px] text-[#FFF] font-extrabold">
+              Meet all the heroes from the field
+            </h2>
+            <p class="font-medium text-sm text-[#FFFFFF99] pt-4">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide1" class="btn btn-circle bg-[#131318] text-[#FFF]"
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-[#131318] text-[#FFF] border-[#131318]"
               >❮</a
             >
-            <a href="#slide1" class="btn btn-circle">❯</a>
+            <a
+              href="#slide1"
+              class="btn btn-circle bg-[#131318] text-[#FFF] border-[#131318]"
+              >❯</a
+            >
           </div>
+        </div>
+        <div
+          class="bg-[#131318] text-[#FFF] absolute bottom-0 right-0 w-[502px] p-8 rounded-lg mr-14 mb-8"
+        >
+          <h2 class="text-[24px] text-[#FFF] font-extrabold">
+            Meet all the heroes from the field
+          </h2>
+          <p class="font-medium text-sm text-[#FFFFFF99] pt-4">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
       </div>
     </header>
     <!-- header section end -->
     <!-- main section start -->
-    <main class="lg:pt-12 lg:px-32">
+    <main class="lg:pt-12 lg:px-20">
       <!-- professional section start -->
       <section class="mt-24">
         <div class="text-center">
@@ -139,6 +174,20 @@
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
+        </div>
+        <div class="mt-20 flex justify-center items-center">
+          <div class="radial-progress text-green-600 font-extrabold text-2xl text-[#131318]" style="--value: 87" role="progressbar">
+            87
+          </div>
+          <div class="radial-progress" style="--value: 95" role="progressbar">
+            95%
+          </div>
+          <div class="radial-progress" style="--value: 90" role="progressbar">
+            90%
+          </div>
+          <div class="radial-progress" style="--value: 80" role="progressbar">
+            80%
+          </div>
         </div>
       </section>
       <!-- professional section ends -->
@@ -153,32 +202,166 @@
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
         </div>
-        <div class="mt-20">
-          <img src="Images/2.png" alt="" />
-          <div class="">
-            <h4>Junior Program</h4>
-            <p>
-              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
-              morbi nulla. Tortor congue sed et in.
-            </p>
-            <button>Register Now</button>
+        <div class="mt-20 lg:grid grid-cols-4 grid-rows-2 gap-6">
+          <div
+            class="col-span-2 row-span-1 px-10 pt-24 pb-10 rounded-xl"
+            style="
+              background-image: url(Images/2.png);
+              background-repeat: round;
+            "
+          >
+            <div class="bg-opacity-60"></div>
+            <div class="">
+              <h1 class="mb-5 text-3xl font-extrabold text-[#FFF]">
+                Junior Program
+              </h1>
+              <p class="mb-5 text-[#FFF] font-medium">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button class="btn bg-[#FF4240] border-[#FF4240]">
+                Register Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-span-2 row-span-1 px-10 pt-24 pb-10 rounded-xl"
+            style="
+              background-image: url(Images/3.png);
+              background-repeat: round;
+            "
+          >
+            <div class="bg-opacity-60"></div>
+            <div class="">
+              <h1 class="mb-5 text-3xl font-extrabold text-[#FFF]">
+                Teenager Program
+              </h1>
+              <p class="mb-5 text-[#FFF] font-medium">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button class="btn bg-[#FF4240] border-[#FF4240]">
+                Register Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-span-4 row-span-1 px-10 pt-24 pb-10 rounded-xl"
+            style="
+              background-image: url(Images/4.png);
+              background-repeat: round;
+            "
+          >
+            <div class="bg-opacity-60"></div>
+            <div class="">
+              <h1 class="mb-5 text-3xl font-extrabold text-[#FFF]">
+                Professional Program
+              </h1>
+              <p class="mb-5 text-[#FFF] font-medium">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <button class="btn bg-[#FF4240] border-[#FF4240]">
+                Register Now
+              </button>
+            </div>
           </div>
         </div>
       </section>
       <!-- program section ends -->
       <!-- get in touch section start -->
       <section>
-        <div class="">
-            <h2>Get In Touch</h2>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        <div class="mt-24 text-center">
+          <h2 class="text-4xl font-extrabold text-[#131318]">Get In Touch</h2>
+          <p class="mt-6 w-[600px] text-center mx-auto font-medium">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="flex justify-evenly">
+          <div class="mt-20 space-y-6 w-[474px] h-[780px] p-10 border rounded-xl">
+            <div class="card w-96 bg-[#BCED6D1A] shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="Images/Group 1171275317.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body text-center items-center">
+                <h2 class="card-title">Phone Number</h2>
+                <p>+62) 123-321-543</p>
+              </div>
+            </div>
+            <div class="card w-96 bg-[#BCED6D1A] shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="Images/Group 1171275318.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body text-center items-center">
+                <h2 class="card-title">Email</h2>
+                <p>hockeys@support.com</p>
+              </div>
+            </div>
+            <div class="card w-96 bg-[#629CF31A] shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="Images/Group 1171275321.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body text-center items-center">
+                <h2 class="card-title">Location</h2>
+                <p>152/1 Mohakhali Wireless Gate</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-20">
+            <div class="grid grid-cols-4 grid-rows-2 gap-6">
+              <label class="form-control w-full max-w-xs col-span-2">
+                <div class="label">
+                  <span class="label-text text-[#131318] text-xl font-bold">Your Name</span>
+                </div>
+                <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs bg-[#13131808] border-none"/>
+              </label>
+              <label class="form-control w-full max-w-xs col-span-2">
+                <div class="label">
+                  <span class="label-text text-[#131318] text-xl font-bold">Your Mail</span>
+                </div>
+                <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs bg-[#13131808] border-none" />
+              </label>
+              <label class="form-control w-full max-w-xs col-span-2">
+                <div class="label">
+                  <span class="label-text text-[#131318] text-xl font-bold">Subject</span>
+                </div>
+                <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs bg-[#13131808] border-none" />
+              </label>
+              <label class="form-control w-full max-w-xs col-span-2">
+                <div class="label">
+                  <span class="label-text text-[#131318] text-xl font-bold">Phone Number</span>
+                </div>
+                <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs bg-[#13131808] border-none" />
+              </label>
+            </div>
+            <div class="mt-20">
+              <p class="text-[#131318] text-xl font-bold">Message</p>
+              <textarea class="textarea textarea-bordered] w-full h-[370px] bg-[#13131808] border-none mt-2" placeholder="Enter your message"></textarea>
+            </div>
+            <button class="btn bg-[#FF4240] w-full mt-8 text-[#FFF] text-xl font-bold">Send Message</button>
+          </div>
+        </div>    
+        <div class="mt-20">
+          <h2 class="text-[#131316] text-2xl font-extrabold text-center">Social Media</h2>
+          <div class="mt-8 text-center space-x-7 text-[#131318]">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+          </div>
         </div>
       </section>
       <!-- get in touch section ends -->
     </main>
     <!-- main section ends -->
     <!-- footer section start -->
-    <footer></footer>
+    <footer class="mt-20">
+
+    </footer>
     <!-- footer section ends -->
   </body>
 </html>
